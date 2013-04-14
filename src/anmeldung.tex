@@ -1,0 +1,38 @@
+% engine=luajittex
+
+\setuppapersize[A6,landscape][A6,landscape]
+\setuppagenumbering[location=]
+\setupbackgrounds[page][background=color,backgroundcolor=green]
+
+\setuplayout
+  [
+    backspace=10mm,
+    cutspace=10mm,
+    topspace=10mm,
+    bottomspace=10mm,
+    header=0mm, 
+    footer=0mm,
+    width=128mm,
+    height=85mm
+  ]
+
+\showframe
+
+\usemodule[simplefonts]
+\setmainfont[arial]
+
+\starttext
+\midaligned{\WORD{Anmeldung}}
+\par
+zum Gemeinschaftswochenende in Klein-Schönstatt bis spätestens 10. Juni 1994 an\\
+Florian Sigl (Adresse Seite 19)
+
+Name, Vorname: \thinrule Geb. Datum: \thinrule\\
+Adresse: \thinrule\\
+Telefonnummer: \thinrule
+
+Zu Kapellchenfest am Sonntag kommen \thinrule Personen
+
+Ich erkläre mich damit einverstanden, daß mein Sohn am Treffen in Klein-Schönstatt teilnimmt:
+\thinrule (Unterschrift des Erziehungsberechtigten)
+\stoptext
